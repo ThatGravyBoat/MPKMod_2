@@ -168,8 +168,6 @@ public class FunctionCompatibility implements FunctionHolder,
         }
         int r = color.getRed(), g = color.getGreen(), b = color.getBlue(), a = color.getAlpha();
 
-        drawContext.getMatrices().translate(0, 0, 0.04);
-
         drawContext.draw(provider -> {
             VertexConsumer consumer = provider.getBuffer(RenderLayer.getGui());
 
@@ -210,7 +208,6 @@ public class FunctionCompatibility implements FunctionHolder,
     public void drawString(String text, double x, double y, Color color, double fontSize, boolean shadow) {
         if (drawContext == null) return;
         MatrixStack matrixStack = drawContext.getMatrices();
-        matrixStack.translate(0, 0, 0.04);
         matrixStack.push();
         matrixStack.translate(x, y, 0);
         double scale = fontSize / MinecraftClient.getInstance().textRenderer.fontHeight;
