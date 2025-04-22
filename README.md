@@ -37,6 +37,7 @@ If you think that mpkmod should have a specific feature, encounter any bugs or i
     - 1.20.6
     - 1.21
     - 1.21.3
+    - 1.21.5
 
 ---
 
