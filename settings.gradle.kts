@@ -32,4 +32,5 @@ if (System.getenv("JITPACK") == null) {
     include("fabric-1.21")
     include("fabric-1.21.3")
     include("fabric-1.21.5")
+    include("fabric-1.21.6")
 }
